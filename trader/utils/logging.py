@@ -1,4 +1,4 @@
-"""Logging configuration for BareTrader."""
+"""Logging configuration for Kodiak."""
 
 import logging
 import sys

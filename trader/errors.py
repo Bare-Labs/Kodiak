@@ -1,4 +1,4 @@
-"""Shared error types for BareTrader.
+"""Shared error types for Kodiak.
 
 All application-level errors inherit from AppError. Each error carries:
 - message: Human-readable description

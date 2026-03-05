@@ -10,7 +10,7 @@ def test_cli_help() -> None:
     runner = CliRunner()
     result = runner.invoke(cli, ["--help"])
     assert result.exit_code == 0
-    assert "BareTrader" in result.output
+    assert "Kodiak" in result.output
     assert "status" in result.output
 
 

@@ -1,4 +1,4 @@
-"""Backtesting module for BareTrader.
+"""Backtesting module for Kodiak.
 
 This module provides backtesting capabilities to test trading strategies
 against historical data before risking real capital.

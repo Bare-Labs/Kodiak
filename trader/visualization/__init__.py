@@ -1,4 +1,4 @@
-"""Visualization helpers for BareTrader."""
+"""Visualization helpers for Kodiak."""
 
 from __future__ import annotations
 

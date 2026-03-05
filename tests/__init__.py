@@ -1,1 +1,1 @@
-"""Test suite for BareTrader."""
+"""Test suite for Kodiak."""

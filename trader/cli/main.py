@@ -1,4 +1,4 @@
-"""CLI entry point for BareTrader.
+"""CLI entry point for Kodiak.
 
 All business logic is delegated to the trader.app service layer.
 This module handles:
@@ -65,7 +65,7 @@ def _get_json_flag(ctx: click.Context) -> bool:
 @click.option("--json", "as_json", is_flag=True, help="Output as JSON")
 @click.pass_context
 def cli(ctx: click.Context, prod: bool, as_json: bool) -> None:
-    """BareTrader - CLI-based automated trading system."""
+    """Kodiak - CLI-based automated trading system."""
     import sys
     import traceback
     from datetime import datetime
@@ -117,7 +117,7 @@ def status(ctx: click.Context) -> None:
         if as_json:
             _json_output(result)
         else:
-            table = Table(title="BareTrader Status")
+            table = Table(title="Kodiak Status")
             table.add_column("Setting", style="cyan")
             table.add_column("Value", style="green")
 
@@ -813,11 +813,11 @@ def schedule_enable(every: int) -> None:
 
 @schedule_group.command("disable")
 def schedule_disable() -> None:
-    """Remove the BareTrader cron job from your crontab."""
+    """Remove the Kodiak cron job from your crontab."""
     from trader.utils.schedule_cron import disable_schedule, is_schedule_enabled
 
     if not is_schedule_enabled():
-        console.print("[yellow]Schedule was not enabled (no BareTrader cron job found).[/yellow]")
+        console.print("[yellow]Schedule was not enabled (no Kodiak cron job found).[/yellow]")
         return
     try:
         disable_schedule()
@@ -2893,7 +2893,7 @@ def serve(
     """Start the MCP server (stdio or streamable HTTP).
 
     Launches an MCP-compliant server, allowing AI agents (e.g. Claude Desktop)
-    to interact with BareTrader via the MCP protocol.
+    to interact with Kodiak via the MCP protocol.
     """
     import asyncio
     import sys

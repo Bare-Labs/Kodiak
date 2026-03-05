@@ -1,4 +1,4 @@
-"""Application service layer for BareTrader.
+"""Application service layer for Kodiak.
 
 This module provides the shared business logic used by both CLI and MCP
 interfaces. Each submodule exposes functions that:
