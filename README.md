@@ -1,6 +1,6 @@
-# 📈 BareTrader — CLI-Based Automated Trading System
+# 📈 Kodiak — CLI-Based Automated Trading System
 
-BareTrader is a command-line trading platform for **automated stock trading**. It supports paper trading and live trading modes via Alpaca, with predefined trading strategies that handle complete trade lifecycles from entry to exit. From 1.0.0 the CLI and MCP tool set are treated as stable; breaking changes will be rare and noted in [CHANGELOG](CHANGELOG.md).
+Kodiak is a command-line trading platform for **automated stock trading**. It supports paper trading and live trading modes via Alpaca, with predefined trading strategies that handle complete trade lifecycles from entry to exit. From 1.0.0 the CLI and MCP tool set are treated as stable; breaking changes will be rare and noted in [CHANGELOG](CHANGELOG.md).
 
 ---
 
@@ -17,7 +17,7 @@ BareTrader is a command-line trading platform for **automated stock trading**. I
 
 ## 🤖 MCP Server Usage
 
-BareTrader supports both CLI users and AI agents via an MCP-compliant server. **For AI agents**: Use the MCP server for all operations (status, strategies, backtests, etc.); the CLI is for human use. Run CLI only when testing or verifying human-facing output (e.g. `trader status` or `trader --json <cmd>`).
+Kodiak supports both CLI users and AI agents via an MCP-compliant server. **For AI agents**: Use the MCP server for all operations (status, strategies, backtests, etc.); the CLI is for human use. Run CLI only when testing or verifying human-facing output (e.g. `trader status` or `trader --json <cmd>`).
 
 **Quick Start**: Install → Configure → Use. See the Installation and Configure MCP Server sections below.
 
@@ -26,7 +26,7 @@ BareTrader supports both CLI users and AI agents via an MCP-compliant server. **
 1. **Install**: `brew install baretrader` (or `pipx install -e .`)
 2. **Configure**: Add to Claude Desktop/Cursor MCP config (see below)
 
-That's it! BareTrader is ready to use with Claude Desktop or Cursor.
+That's it! Kodiak is ready to use with Claude Desktop or Cursor.
 
 ## 📦 Installation
 
@@ -54,17 +54,17 @@ And verify:
 trader status
 ```
 
-**Note**: When installed via **pipx** or Homebrew, BareTrader uses the same behavior: config, data, and logs go to `~/.baretrader/` (macOS) or `~/.config/baretrader/` (Linux). `trader config set` and all path resolution work identically with pipx. See the Installation section for path behavior.
+**Note**: When installed via **pipx** or Homebrew, Kodiak uses the same behavior: config, data, and logs go to `~/.baretrader/` (macOS) or `~/.config/baretrader/` (Linux). `trader config set` and all path resolution work identically with pipx. See the Installation section for path behavior.
 
 ### Configure MCP Server
 
-Add BareTrader to your Claude Desktop or Cursor MCP configuration:
+Add Kodiak to your Claude Desktop or Cursor MCP configuration:
 
 **Claude Desktop** (`~/Library/Application Support/Claude/claude_desktop_config.json`):
 ```json
 {
   "mcpServers": {
-    "BareTrader": {
+    "Kodiak": {
       "command": "trader",
       "args": ["mcp", "serve"],
       "env": {
@@ -525,7 +525,7 @@ Saved optimization results are stored under `data/optimizations/` by default.
 
 ## 📈 Indicators Library
 
-BareTrader ships with a lightweight indicators library. If `pandas-ta` is
+Kodiak ships with a lightweight indicators library. If `pandas-ta` is
 installed it will be used; otherwise, built-in pandas-based calculations are used.
 
 ```bash
@@ -564,7 +564,7 @@ trader start
 
 ## 🔒 Safety & Risk Controls
 
-BareTrader enforces multiple layers of protection:
+Kodiak enforces multiple layers of protection:
 
 * Paper trading by default
 * Production requires `--prod` flag with interactive confirmation

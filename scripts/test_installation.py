@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Test script to verify BareTrader installation and path resolution.
+"""Test script to verify Kodiak installation and path resolution.
 
-This script simulates what happens when BareTrader is installed via Homebrew/pipx
+This script simulates what happens when Kodiak is installed via Homebrew/pipx
 and verifies that:
 1. Path resolution works correctly (uses user directories, not package dirs)
 2. Config/data/log directories are created and writable
@@ -159,9 +159,9 @@ def test_cli_command():
 def main():
     """Run all tests."""
     print("\n" + "=" * 60)
-    print("BareTrader Installation Test")
+    print("Kodiak Installation Test")
     print("=" * 60)
-    print("\nThis script verifies that BareTrader is properly installed")
+    print("\nThis script verifies that Kodiak is properly installed")
     print("and ready to use with Claude Desktop or Cursor.\n")
 
     tests = [
@@ -196,14 +196,14 @@ def main():
 
     print("\n" + "=" * 60)
     if all_passed:
-        print("✓ All tests passed! BareTrader is ready to use.")
+        print("✓ All tests passed! Kodiak is ready to use.")
         print("\nNext steps:")
         print("1. Install via: brew install baretrader (or pipx install -e .)")
         print("2. Configure Claude Desktop:")
         print('   Add to ~/Library/Application Support/Claude/claude_desktop_config.json:')
         print('   {')
         print('     "mcpServers": {')
-        print('       "BareTrader": {')
+        print('       "Kodiak": {')
         print('         "command": "trader",')
         print('         "args": ["mcp", "serve"],')
         print('         "env": {')

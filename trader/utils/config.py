@@ -1,4 +1,4 @@
-"""Configuration management for BareTrader."""
+"""Configuration management for Kodiak."""
 
 import os
 from dataclasses import dataclass, field

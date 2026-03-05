@@ -1,4 +1,4 @@
-"""Centralized path resolution for BareTrader.
+"""Centralized path resolution for Kodiak.
 
 Handles config, data, and log directories for both development and installed environments.
 Uses XDG Base Directory spec on Linux, standard locations on macOS/Windows.

@@ -1,4 +1,4 @@
-"""MCP server for BareTrader.
+"""MCP server for Kodiak.
 
 Uses the official MCP Python SDK (FastMCP) with stdio or HTTP transports.
 Tools delegate to the trader.app service layer and return JSON responses.
@@ -44,7 +44,7 @@ def _err(e: AppError) -> str:
 
 
 def get_status() -> str:
-    """Get current BareTrader engine status.
+    """Get current Kodiak engine status.
 
     Returns engine running state, environment (paper/prod),
     broker service, API key configuration, active strategy count,

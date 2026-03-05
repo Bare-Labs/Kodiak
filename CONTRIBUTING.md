@@ -1,4 +1,4 @@
-# Contributing to BareTrader
+# Contributing to Kodiak
 
 Thanks for your interest in contributing. This document covers setup, code style, and how to make changes.
 
@@ -17,7 +17,7 @@ Thanks for your interest in contributing. This document covers setup, code style
 
 ```bash
 git clone <repo-url>
-cd bare-trader
+cd kodiak
 poetry install
 ```
 

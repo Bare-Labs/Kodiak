@@ -1,4 +1,4 @@
-"""Optimization module for BareTrader."""
+"""Optimization module for Kodiak."""
 
 from trader.optimization.objectives import OBJECTIVES, score_result
 from trader.optimization.optimizer import Optimizer
